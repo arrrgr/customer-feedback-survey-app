@@ -68,7 +68,7 @@ In the course of this we will cover everything promised above - using the phrase
 
 First, make sure you’ve got the latest version of Node.js and Visual Studio Code. Now, head over to our [developer community](https://community.dasha.ai) where you will get instructions to your Dasha API key. You will also want to install the Dasha Studio extension in VS Code, a well as the Dasha [command line interface](https://dasha.ai/en-us/blog/dasha-cli) __`npm i -g "@dasha.ai/cli" `__. AIf you need a quick start guide, please refer to [this post](https://dasha.ai/en-us/blog/virtual-receptionist-software). If you have any difficulties, just ask in our developer community. 
 
-Now open a Dasha app in VS Code. I propose you start with the [first app](https://github.com/dasha-samples/dasha-first-app). 
+Now open this Dasha app in VS Code. 
 
 Now, open up the following files:  
 - __main.dsl__  - you use your main DashaScript file to define the conversational workflow.
@@ -381,6 +381,6 @@ digression how_are_you
 
 Again, quite self explanatory thanks to the comments. When intent __”how_are_you”__ is recognized, the platform says “I’m well, thank you!” (note that I’m using __`#sayText`__, not __`#say`__ here. This means I can type up the text right in the node and don’t have to refer to the phrase map). Then it goes back to the node from which it was so rudely interrupted and repeats the phrase that Dasha pronounced after which the user initiated the digression. If you provide alternative phrasing in your phrase map, Dasha will use it. 
 
-And there you go. If you follow these instructions you will have built a basic customer feedback survey conversational AI app. Just in case you haven’t visited yet, here is the link to the source code in the [GitHub repository](https://github.com/arrrgr/customer-feedback-survey) again. 
+And there you go. If you follow these instructions you will have built a basic customer feedback survey conversational AI app.. 
 
 If this tutorial was helpful, do let me know in [Dasha developer community](https://community.dasha.ai) or at arthur@dasha.ai. If it was hard to understand, please do the same. Good luck and godspeed!
