@@ -165,12 +165,12 @@ Now scroll down, until you see __```macros```:__ and add this line:
 ```
 
 Remember that for every phrase you add to the phrase map, you need to have a corresponding macro. If you forget, your IDE will let you know you made the mistake. Now your app knows how to greet the user. Note that we are substituting a dynamic variable “name” to refer to the user by their name. 
-The input variable __`name`__ is also used in the function we were just looking at __`#say("greeting", {name: $name} );`__. As you run your conversational app, you would input the value for “name” following for the phone number. The terminal command to launch a call would look something like this: __`npm start 12223334455 John`__. Now, in order for the application to recognize “John” as mapping to variable __`name`__, we need to provide instructions in the SDK. Open __index.js__ and search for __`const conv = app.createConversation`__ modify this line to read. 
+The input variable __`name`__ is also used in the function we were just looking at __`#say("greeting", {name: $name} );`__. As you run your conversational app, you would input the value for “name” following for the phone number. The terminal command to launch a call would look something like this: __`npm start 12223334455 John`__. Now, in order for the application to recognize “John” as mapping to variable __`name`__, we need to provide instructions in the SDK. Open __index.js__ and __`const conv = app.createConversation`__ modify this line to read. 
 
 ```javascript
  // in the line below, to account for name input context variable, you declare below: name: process.argv[3] ?? ""
  const conv = app.createConversation({ phone: process.argv[2] ?? "", name: process.argv[3] ?? "" });
-‘’’
+```
 
 This code is found in lines 57-58 of __index.js__, as found in the GitHub repository.
 Great work. Now let’s assume that our user replied in the positive to Dasha’s request for two minutes and move on to the perfect world flow below. We finally get to ask the first question of our automated customer feedback survey. 
