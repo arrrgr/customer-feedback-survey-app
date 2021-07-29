@@ -5,7 +5,9 @@
 Email and sms customer feedback surveys suck. Phone surveys are cool because they are so rare… and expensive. At least they were expensive. Now you can build a Dasha conversational AI app that will reach out to your customer after an interaction, ask some questions, collect the ratings *and* collect some open, actionable feedback. It just works. Also, it’s a fun little project. 
 
 You can watch the video below to see a live demo of what you will have built: 
+<iframe>
 <a href="https://youtu.be/mJ_OZYTuJys" class="embedly-card" data-card-width="100%" data-card-controls="0">Embedded content: https://youtu.be/mJ_OZYTuJys</a>
+</iframe>
 
 In this tutorial we will go over: 
 
