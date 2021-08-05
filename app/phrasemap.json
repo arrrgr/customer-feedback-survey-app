@@ -2,7 +2,7 @@
   "default": {
     "voiceInfo": {
       "lang": "en-US",
-      "speaker": "V2",
+      "speaker": "V2", 
       "speed": 0.3,
       "variation": 4
     },
