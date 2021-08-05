@@ -35,20 +35,12 @@ async function main()
 
   app.ttsDispatcher = () => "dasha";
 
-  app.setExternal("check_rating", (args, conv) => 
+  app.setExternal("console_log", (args, conv) => 
   {
-    const isGood = testRating(q1_rate);
-    return isGood;
+    console.log(args);
   }); 
 
-  console.log(isGood);
-
   await app.start();
-
-  // collecting data from the conversation for use in external services 
-
-  // app.setExternal("call_back", (args, conv) => { call_back = args});
-  // console.log(call_back);
 
   const conv = app.createConversation({ phone: process.argv[2] ?? "" });
 
